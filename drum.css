@@ -1,4 +1,22 @@
+.container {
+	text-align: center;
+}
+
+.column {
+	float: left;
+}
+
 .circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	outline: none;
+}
+
+.circle2 {
 	width: 100px;
 	height: 100px;
 	background: red;

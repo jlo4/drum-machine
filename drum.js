@@ -94,10 +94,45 @@ $(document).ready(function(){
 			keyData[event.key].sound.play();
 		}
 	});
+
 	$(".circle").on("click", function() {
-  			$(this).addClass('pressed');
+		switch ($(this).text()) {
+		case 'q':
+		keyData['q'].sound.play();
+		$(".q").addClass('pressed');
   		setTimeout(function(){
-  			$(".circle").removeClass('pressed');
-  		}, 70)
-  		});
+  			$(".q").removeClass('pressed');
+  		}, 70);
+		break;
+		case 'w':
+		keyData['w'].sound.play();
+		$(".w").addClass('pressed');
+  		setTimeout(function(){
+  			$(".w").removeClass('pressed');
+  		}, 70);
+		break;
+		case 'e':
+		keyData['e'].sound.play();
+		$(".e").addClass('pressed');
+  		setTimeout(function(){
+  			$(".e").removeClass('pressed');
+  		}, 70);
+		break;
+		case 'r':
+		keyData['r'].sound.play();
+		$(".r").addClass('pressed');
+  		setTimeout(function(){
+  			$(".r").removeClass('pressed');
+  		}, 70);
+		break;
+		case 't':
+		keyData['t'].sound.play();
+		$(".t").addClass('pressed');
+  		setTimeout(function(){
+  			$(".t").removeClass('pressed');
+  		}, 70);
+		break;
+ 
+  	}
+  	});
 });
