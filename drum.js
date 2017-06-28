@@ -50,6 +50,11 @@ var keyData = {
 		  		src: ['drums/kick.wav']
 				}),
 				// color: '#9b59b6'
+			},
+			t: {
+				sound: new Howl({
+				src: ['drums/openhat.wav']
+				}),
 			}
 }
 
@@ -89,5 +94,10 @@ $(document).ready(function(){
 			keyData[event.key].sound.play();
 		}
 	});
-
+	$(".circle").on("click", function() {
+  			$(this).addClass('pressed');
+  		setTimeout(function(){
+  			$(".circle").removeClass('pressed');
+  		}, 70)
+  		});
 });
