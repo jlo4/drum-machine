@@ -101,43 +101,42 @@ $(document).ready(function(){
 	});
 
 	$(".circle").on("click", function() {
-		switch ($(this).text()) {
-		case 'q':
-		keyData['q'].sound.play();
-		$(".q").addClass('pressed');
+		var clicked = ($(this).text());
+		keyData[clicked].sound.play();
+		$("." + clicked).addClass('pressed');
   		setTimeout(function(){
-  			$(".q").removeClass('pressed');
+  			$("." + clicked).removeClass('pressed');
   		}, 70);
-		break;
-		case 'w':
-		keyData['w'].sound.play();
-		$(".w").addClass('pressed');
-  		setTimeout(function(){
-  			$(".w").removeClass('pressed');
-  		}, 70);
-		break;
-		case 'e':
-		keyData['e'].sound.play();
-		$(".e").addClass('pressed');
-  		setTimeout(function(){
-  			$(".e").removeClass('pressed');
-  		}, 70);
-		break;
-		case 'r':
-		keyData['r'].sound.play();
-		$(".r").addClass('pressed');
-  		setTimeout(function(){
-  			$(".r").removeClass('pressed');
-  		}, 70);
-		break;
-		case 't':
-		keyData['t'].sound.play();
-		$(".t").addClass('pressed');
-  		setTimeout(function(){
-  			$(".t").removeClass('pressed');
-  		}, 70);
-		break;
+		// break;
+		// case 'w':
+		// keyData['w'].sound.play();
+		// $(".w").addClass('pressed');
+  // 		setTimeout(function(){
+  // 			$(".w").removeClass('pressed');
+  // 		}, 70);
+		// break;
+		// case 'e':
+		// keyData['e'].sound.play();
+		// $(".e").addClass('pressed');
+  // 		setTimeout(function(){
+  // 			$(".e").removeClass('pressed');
+  // 		}, 70);
+		// break;
+		// case 'r':
+		// keyData['r'].sound.play();
+		// $(".r").addClass('pressed');
+  // 		setTimeout(function(){
+  // 			$(".r").removeClass('pressed');
+  // 		}, 70);
+		// break;
+		// case 't':
+		// keyData['t'].sound.play();
+		// $(".t").addClass('pressed');
+  // 		setTimeout(function(){
+  // 			$(".t").removeClass('pressed');
+  // 		}, 70);
+		// break;
  
-  	}
+  	// }
   	});
 });
