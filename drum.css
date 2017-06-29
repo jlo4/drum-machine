@@ -1,5 +1,11 @@
 .container {
+	width: 500px;
+	margin: 175px auto;
+}
+
+h1 {
 	text-align: center;
+	padding-bottom: 40px;
 }
 
 .column {
@@ -16,14 +22,15 @@
 	outline: none;
 }
 
-.circle2 {
-	width: 100px;
-	height: 100px;
-	background: red;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	outline: none;
+.q {
+	margin-top: 50px;
+}
+
+.e {
+	margin-bottom: 50px;
+}
+.t {
+	margin-top: 50px;
 }
 
 .pressed {

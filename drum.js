@@ -91,6 +91,11 @@ var keyData = {
 $(document).ready(function(){
 	$(document).keydown(function(e){
 		if(keyData[event.key]){
+			var that = event.key
+			$("." + that).addClass('pressed');
+  		setTimeout(function(){
+  			$("." + that).removeClass('pressed');
+  		}, 70);
 			keyData[event.key].sound.play();
 		}
 	});
