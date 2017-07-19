@@ -1,11 +1,28 @@
+body {
+	background: #2E86AB;
+}
 .container {
 	width: 500px;
-	margin: 175px auto;
+	margin: 10% auto 5% auto;
 }
 
 h1 {
+	color: #fff;
+	font-size: 72px;
+	text-shadow: .5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 	text-align: center;
-	padding-bottom: 40px;
+}
+
+p {
+	color: #fff;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: .5px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.drums {
+	width: 31.3%;
+	margin: 0 auto;
 }
 
 .column {
@@ -15,7 +32,7 @@ h1 {
 .circle {
 	width: 100px;
 	height: 100px;
-	background: red;
+	background: #B4656F;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
@@ -24,16 +41,18 @@ h1 {
 }
 
 .q {
-	margin-top: 50px;
+	margin-top: 30%;
 }
 
-.e {
-	margin-bottom: 50px;
-}
 .t {
-	margin-top: 50px;
+	margin-top: 30%;
 }
 
 .pressed {
 	border: 10px dashed green;
+}
+
+button {
+	color: black;
+	font-weight: bold;
 }
